@@ -6,10 +6,12 @@ int main()
     int age;
     cout<<"Enter the age "<<endl;
     cin>>age;
+    // Clear the newline character left in the buffer
+    cin.ignore();
     string citizen;
-    cout<<"Enter the citizenshi status"<<endl;
+    cout<<"Enter the citizenship status"<<endl;
     getline(cin, citizen);
-    if(age>18 && citizen=="yes" || "Yes")
+    if(age>18 && (citizen=="yes" || "Yes"))
     {
         cout<<"You are eligible to vote "<<endl;
     }
@@ -17,4 +19,5 @@ int main()
     {
         cout<<"You are not eligible to vote "<<endl;
     }
+    return 0;
 }
