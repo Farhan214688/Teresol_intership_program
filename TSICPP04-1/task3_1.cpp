@@ -14,8 +14,19 @@ int main()
     float floatValue = 3.14f;
     char charValue = 'A';
     void *ptr;
-    ptr=
-    cout<<(int)*ptr<<endl;
-    
+
+    cout<<"Int: "<<endl;
+    ptr=&intValue;
+    cout<< *static_cast<int*>(ptr)<<endl;
+
+    cout<<"float: "<<endl;
+    ptr=&floatValue;
+    cout<< *static_cast<float*>(ptr)<<endl;
+
+    cout<<"Char: "<<endl;
+    ptr=&charValue;
+    cout<< *static_cast<char*>(ptr)<<endl;
+
+    return 0;
     
 }
