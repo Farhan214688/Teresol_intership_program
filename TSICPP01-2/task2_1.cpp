@@ -1,3 +1,14 @@
+/*****************************************
+ *  task : 
+ *  assigment no. 
+ *  problem statement:
+ * 
+ * 
+ * 
+ */
+
+
+
 #include<iostream>
 using namespace std;
 int main()

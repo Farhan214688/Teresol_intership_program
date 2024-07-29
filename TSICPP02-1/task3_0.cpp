@@ -11,6 +11,8 @@ void test()
     // var2 is a local variable
     int var2 = 0;
 
+     cout << "static var: " << var << ", local var2: " << var2 << ", global var4: " << var4 << endl;
+
     // Modify and print variables
     var++;
     var2++;

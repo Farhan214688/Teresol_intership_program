@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void rotate(int matrix[4][4], int n) 
+/*void rotate(int matrix[4][4], int n) 
 {
     for (int layer = 0; layer < n / 2; ++layer) 
     {
@@ -29,7 +29,7 @@ void rotate(int matrix[4][4], int n)
         }
         matrix[first][first + 1] = topLeft; // Place saved top-left element
     }
-}
+}*/
 
 void printMatrix(int matrix[4][4], int n) 
 {
@@ -56,7 +56,8 @@ int main()
     cout << "Original Matrix:"<<endl;
     printMatrix(matrix, 4);
     rotate(matrix, 4);
-    cout << "\nMatrix After Clockwise Rotation by One Step: "<<endl;
+    cout<<endl;
+    cout << "Matrix After Clockwise Rotation : "<<endl;
     printMatrix(matrix, 4);
 
     return 0;
